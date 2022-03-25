@@ -120,7 +120,7 @@ func (d *Deployment) checkSameNode(ctx context.Context, dp *appsv1.Deployment) {
 	}
 
 	if len(nodeMap) < 2 {
-		d.AddCode(ctx, 508, *dp.Spec.Replicas)
+		d.AddCode(ctx, 509, *dp.Spec.Replicas)
 	}
 }
 

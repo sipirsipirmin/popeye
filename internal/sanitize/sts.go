@@ -134,7 +134,7 @@ func (s *StatefulSet) checkSameNode(ctx context.Context, st *appsv1.StatefulSet)
 	}
 
 	if len(nodeMap) < 2 {
-		s.AddCode(ctx, 508, *st.Spec.Replicas)
+		s.AddCode(ctx, 509, *st.Spec.Replicas)
 	}
 }
 
